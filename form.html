@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <style>
+        .box {
+            margin: 5px;
+            text-align: justify;
+            line-height: 30px;
+            background-color: qua;
+            width: auto;
+            height: 900px;
+            color: whitesmoke;
+
+        }
+
+        .field {
+            background-image: url(./Details.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            backdrop-filter: saturate(180%) blur(10px);
+        }
+
+        @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+            .field2 {
+                -webkit-backdrop-filter: blur(10px);
+                backdrop-filter: blur(10px);
+            }
+        }
+
+        .field2 {
+            border: 1px solid rgb(188, 187, 187);
+            width: max-content;
+            margin: 30px;
+
+        }
+
+        button {
+            width: 65%;
+            height: 35px;
+            color: white;
+            border: 1px solid;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+
+        button:hover {
+            font-size: 20px;
+        }
+
+        label {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <fieldset class="field">
+            <fieldset class="field2">
+                <legend style="color: red;"><b><u>Registration Form</u></b></legend>
+                <table class="box">
+                    <th colspan="3">
+
+                    </th>
+                    <form action="data.txt" method="post">
+                        <tr>
+                            <td>
+                                <label for="name">Enter Name</label>
+
+                            </td>
+                            <td><input type="text" id="name" name="name"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="name">Enter Username</label>
+
+                            </td>
+                            <td><input type="text" id="name" name="name"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="password">Enter Password</label>
+
+                            </td>
+                            <td>
+                                <input type="password" id="password" name="password">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="password">Confirm Password</label>
+
+                            </td>
+                            <td>
+                                <input type="password" id="password" name="password">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="address">Enter Address</label>
+
+                            </td>
+                            <td>
+                                <textarea type="text" cols="25" rows="3" id="address" name="address"> </textarea>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="gender">Gender</label>
+                            </td>
+                            <td>
+                                <input type="radio" name="gender" id="gender"> Male
+                                <input type="radio" name="gender" id="gender"> Female
+
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="">Select your age</label>
+                            </td>
+                            <td>
+                                <select name="" id="">
+                                    <option value="">Select</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                </select>
+                            </td>
+
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="photo">Upload your ID Proof</label>
+                            </td>
+                            <td>
+                                <input type="file" name="photo" id="photo">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="3">
+                                <button><a href="Registration.html" style="text-decoration: none;">Submit</a></button>
+                            </td>
+                        </tr>
+                    </form>
+                </table>
+            </fieldset>
+        </fieldset>
+    </center>
+</body>
+
+</html>
